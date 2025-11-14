@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\ST10442835_CLDV6212_POE.props" />
+</Project>

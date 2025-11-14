@@ -1,0 +1,185 @@
+﻿@model IEnumerable<ST10442835_CLDV6212_POE.Models.Customer>
+@{
+    ViewData["Title"] = "Customers";
+}
+
+<style>
+    body {
+        background-color: #0d0d0d; /* dark black */
+        color: #e0e0e0; /* soft white text */
+    }
+
+    h2 {
+        color: #e0e0e0; /* white heading */
+        font-weight: 700;
+    }
+
+    .btn-primary {
+        background-color: #1a1a1a;
+        border: none;
+        font-weight: 600;
+        color: #e0e0e0;
+    }
+
+        .btn-primary:hover {
+            background-color: #0f0f0f;
+            color: #a0d8ff !important; /* subtle light blue hover */
+        }
+
+    .btn-outline-primary {
+        border-color: #a0d8ff;
+        color: #a0d8ff;
+    }
+
+        .btn-outline-primary:hover {
+            background-color: #a0d8ff;
+            color: #0d0d0d;
+        }
+
+    .btn-outline-danger {
+        border-color: #888;
+        color: #888;
+    }
+
+        .btn-outline-danger:hover {
+            background-color: #888;
+            color: #0d0d0d;
+        }
+
+    .table {
+        background-color: #1a1a1a;
+        border-radius: 8px;
+        overflow: hidden;
+    }
+
+        .table thead {
+            background-color: #222;
+            color: #e0e0e0;
+            text-transform: uppercase;
+            font-weight: 600;
+        }
+
+    .table-hover tbody tr:hover {
+        background-color: #2a2a2a;
+    }
+
+    .alert-info {
+        background-color: #1a1a1a;
+        border: 1px solid #444;
+        color: #e0e0e0;
+    }
+
+        .alert-info .alert-link {
+            color: #a0d8ff;
+            font-weight: 600;
+        }
+
+    .modal-content {
+        background-color: #1a1a1a;
+        color: #e0e0e0;
+        border: 1px solid #444;
+    }
+
+    .modal-header {
+        border-bottom: 1px solid #444;
+    }
+
+    .modal-footer {
+        border-top: 1px solid #444;
+    }
+
+    i.fas {
+        color: #a0d8ff; /* light blue icons */
+    }
+
+    .text-danger {
+        color: #a0d8ff !important; /* subtle light blue for emphasis */
+    }
+</style>
+
+<div class="d-flex justify-content-between align-items-center mb-4">
+    <h2><i class="fas fa-users"></i> Customers</h2>
+    <a asp-action="Create" class="btn btn-primary shadow">
+        <i class="fas fa-plus"></i> Add New Customer
+    </a>
+</div>
+
+@if (Model.Any())
+{
+    <div class="table-responsive shadow">
+        <table class="table table-striped table-hover text-white">
+            <thead>
+                <tr>
+                    <th>Customer ID</th>
+                    <th>Name</th>
+                    <th>Surname</th>
+                    <th>Username</th>
+                    <th>Email</th>
+                    <th>Shipping Address</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var customer in Model)
+                {
+                    <tr>
+                        <td><code>@customer.CustomerId.Substring(0, 8)...</code></td>
+                        <td>@customer.Name</td>
+                        <td>@customer.Surname</td>
+                        <td>@customer.Username</td>
+                        <td>@customer.Email</td>
+                        <td>@customer.ShippingAddress</td>
+                        <td>
+                            <div class="btn-group" role="group">
+                                <a asp-action="Edit" asp-route-id="@customer.RowKey" class="btn btn-sm btn-outline-primary">
+                                    <i class="fas fa-edit"></i>
+                                </a>
+                                <button type="button" class="btn btn-sm btn-outline-danger" onclick="confirmDelete('@customer.RowKey', '@customer.Name @customer.Surname')">
+                                    <i class="fas fa-trash"></i>
+                                </button>
+                            </div>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+}
+else
+{
+    <div class="alert alert-info shadow">
+        <i class="fas fa-info-circle"></i> No customers found.
+        <a asp-action="Create" class="alert-link">Add your first customer</a>!
+    </div>
+}
+
+<!-- Delete Confirmation Modal -->
+<div class="modal fade" id="deleteModal" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content shadow-lg">
+            <div class="modal-header">
+                <h5 class="modal-title text-danger">Confirm Delete</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                Are you sure you want to delete customer <strong id="customerName" class="text-danger"></strong>?
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                <form id="deleteForm" method="post" style="display: inline;">
+                    <button type="submit" class="btn btn-danger">Delete</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script>
+        function confirmDelete(customerId, customerName) {
+            document.getElementById('customerName').textContent = customerName;
+            document.getElementById('deleteForm').action = '/Customer/Delete/' + customerId;
+            new bootstrap.Modal(document.getElementById('deleteModal')).show();
+        }
+    </script>
+}

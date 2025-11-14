@@ -1,0 +1,39 @@
+﻿@model IEnumerable<ST10442835_CLDV6212_POE.Models.Product>
+
+@{
+    ViewData["Title"] = "Products";
+}
+
+<h2 class="mt-4">Available Products</h2>
+
+<table class="table table-striped align-middle">
+    <thead class="table-dark">
+        <tr>
+            <th>Product</th>
+            <th>Description</th>
+            <th>Price</th>
+            <th>Stock</th>
+            <th>Add to Cart</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var product in Model)
+        {
+            <tr>
+                <td>@product.ProductName</td>
+                <td>@product.Description</td>
+                <td>R @product.Price</td>
+                <td>@product.StockAvailable</td>
+                <td>
+                    <form asp-controller="Cart" asp-action="Add" method="post">
+                        @Html.AntiForgeryToken()
+                        <input type="hidden" name="productId" value="@product.RowKey" />
+                        <button type="submit" class="btn btn-primary">Add to Cart</button>
+                    </form>
+
+
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

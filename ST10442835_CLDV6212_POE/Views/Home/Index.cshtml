@@ -1,0 +1,230 @@
+﻿@model ST10442835_CLDV6212_POE.Models.ViewModels.HomeViewModel
+@{
+    ViewData["Title"] = "Home";
+}
+
+<style>
+    body {
+        background-color: #0d0d0d; /* darker black background */
+        color: #e0e0e0; /* soft white text */
+    }
+
+    h1, h2 {
+        color: #e0e0e0; /* white headings */
+        font-weight: 700;
+    }
+
+    .lead {
+        color: #c0c0c0; /* light gray */
+    }
+
+    /* Buttons */
+    .btn {
+        font-weight: 600;
+        border: none;
+        transition: all 0.2s ease-in-out;
+        background-color: #1a1a1a;
+        color: #e0e0e0 !important;
+    }
+
+        .btn:hover {
+            background-color: #0f0f0f;
+            color: #a0d8ff !important; /* subtle light blue on hover */
+        }
+
+    /* Card */
+    .card {
+        background-color: #1a1a1a;
+        border: 1px solid #444; /* soft gray border */
+        border-radius: 10px;
+        transition: transform 0.2s ease-in-out;
+    }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0px 4px 15px rgba(160, 216, 255, 0.3); /* light blue shadow */
+        }
+
+    .card-title {
+        color: #e0e0e0;
+        font-weight: bold;
+    }
+
+    .card-text strong {
+        color: #a0d8ff; /* light blue highlights */
+    }
+
+    .text-muted {
+        color: #888 !important; /* muted gray */
+    }
+
+    /* Alerts */
+    .alert-info, .alert-warning {
+        background-color: #1a1a1a;
+        border: 1px solid #444;
+        color: #e0e0e0;
+    }
+
+    .alert-link {
+        color: #a0d8ff;
+        font-weight: 600;
+    }
+
+    i.fas {
+        color: #a0d8ff; /* light blue icons for subtle accents */
+    }
+</style>
+
+<div class="text-center mb-5">
+    <h1 class="display-4">
+        <i class="fas fa-store"></i> ABC Retailers
+    </h1>
+    <p class="lead">Your one-stop shop for the best deals and latest products</p>
+</div>
+
+<!-- Action Buttons - Customer Only -->
+<div class="row mb-5 justify-content-center">
+    @if (User.IsInRole("Customer"))
+    {
+        <div class="col-md-4 mb-3">
+            <a asp-controller="Order" asp-action="MyOrders" class="btn btn-lg w-100 h-100 d-flex flex-column justify-content-center shadow">
+                <i class="fas fa-shopping-cart fa-2x mb-2"></i>
+                <span>My Orders</span>
+            </a>
+        </div>
+        <div class="col-md-4 mb-3">
+            <a asp-controller="Cart" asp-action="Index" class="btn btn-lg w-100 h-100 d-flex flex-column justify-content-center shadow">
+                <i class="fas fa-shopping-basket fa-2x mb-2"></i>
+                <span>My Cart</span>
+            </a>
+        </div>
+        <div class="col-md-4 mb-3">
+            <a asp-controller="Upload" asp-action="Index" class="btn btn-lg w-100 h-100 d-flex flex-column justify-content-center shadow">
+                <i class="fas fa-upload fa-2x mb-2"></i>
+                <span>Upload Files</span>
+                <small class="text-light">(Payment proofs)</small>
+            </a>
+        </div>
+    }
+    else if (User.IsInRole("Admin"))
+    {
+        <!-- Admin buttons -->
+        <div class="col-md-3 mb-3">
+            <a asp-controller="Customer" asp-action="Index" class="btn btn-lg w-100 h-100 d-flex flex-column justify-content-center shadow">
+                <i class="fas fa-users fa-2x mb-2"></i>
+                <span>View Customers</span>
+                <small class="text-light">(@Model.CustomerCount total)</small>
+            </a>
+        </div>
+        <div class="col-md-3 mb-3">
+            <a asp-controller="Product" asp-action="Index" class="btn btn-lg w-100 h-100 d-flex flex-column justify-content-center shadow">
+                <i class="fas fa-box fa-2x mb-2"></i>
+                <span>View Products</span>
+                <small class="text-light">(@Model.ProductCount total)</small>
+            </a>
+        </div>
+        <div class="col-md-3 mb-3">
+            <a asp-controller="Order" asp-action="Index" class="btn btn-lg w-100 h-100 d-flex flex-column justify-content-center shadow">
+                <i class="fas fa-shopping-cart fa-2x mb-2"></i>
+                <span>View Orders</span>
+                <small class="text-light">(@Model.OrderCount total)</small>
+            </a>
+        </div>
+        <div class="col-md-3 mb-3">
+            <a asp-controller="Upload" asp-action="Index" class="btn btn-lg w-100 h-100 d-flex flex-column justify-content-center shadow">
+                <i class="fas fa-upload fa-2x mb-2"></i>
+                <span>Upload Files</span>
+                <small class="text-light">(Payment proofs)</small>
+            </a>
+        </div>
+    }
+    else
+    {
+        <!-- Public/Unauthenticated user view -->
+        <div class="col-md-6 mb-3">
+            <a href="/Login" class="btn btn-lg w-100 h-100 d-flex flex-column justify-content-center shadow">
+                <i class="fas fa-sign-in-alt fa-2x mb-2"></i>
+                <span>Login</span>
+                <small class="text-light">Access your account</small>
+            </a>
+        </div>
+        <div class="col-md-6 mb-3">
+            <a href="/Login/Register" class="btn btn-lg w-100 h-100 d-flex flex-column justify-content-center shadow">
+                <i class="fas fa-user-plus fa-2x mb-2"></i>
+                <span>Register</span>
+                <small class="text-light">Create new account</small>
+            </a>
+        </div>
+    }
+</div>
+
+<!-- Storage Initialization - Admin Only -->
+@if (User.IsInRole("Admin") && Model.CustomerCount == 0 && Model.ProductCount == 0 && Model.OrderCount == 0)
+{
+    <div class="alert alert-warning shadow">
+        <h5><i class="fas fa-exclamation-triangle"></i> First Time Setup</h5>
+        <p>It looks like this is your first time running the application. Click the button below to initialize Azure Storage.</p>
+        <form asp-action="InitializeStorage" method="post" style="display: inline;">
+            <button type="submit" class="btn btn-primary">
+                <i class="fas fa-cog"></i> Initialize Azure Storage
+            </button>
+        </form>
+    </div>
+}
+
+<!-- Featured Products Section -->
+<div class="row">
+    <div class="col-12">
+        <h2 class="mb-4">
+            <i class="fas fa-star"></i> Featured Products
+        </h2>
+
+        @if (Model.FeaturedProducts.Any())
+        {
+            <div class="row justify-content-center">
+                @foreach (var product in Model.FeaturedProducts)
+                {
+                    <div class="col-lg-2 col-md-3 col-sm-4 col-6 mb-4">
+                        <div class="card h-100 shadow-sm">
+                            @if (!string.IsNullOrEmpty(product.ImageUrl))
+                            {
+                                <img src="@product.ImageUrl" class="card-img-top" alt="@product.ProductName" style="height: 150px; object-fit: cover;">
+                            }
+                            else
+                            {
+                                <div class="card-img-top bg-dark d-flex align-items-center justify-content-center" style="height: 150px;">
+                                    <i class="fas fa-image fa-3x text-muted"></i>
+                                </div>
+                            }
+                            <div class="card-body d-flex flex-column">
+                                <h6 class="card-title text-center">@product.ProductName</h6>
+                                <p class="card-text small text-muted flex-grow-1 text-center">
+                                    @(product.Description.Length > 50 ? product.Description.Substring(0, 50) + "..." : product.Description)
+                                </p>
+                                <div class="mt-auto text-center">
+                                    <p class="card-text">
+                                        <strong>@product.Price.ToString("C")</strong>
+                                    </p>
+                                    <small class="text-muted">Stock: @product.StockAvailable</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                }
+            </div>
+        }
+        else if (User.IsInRole("Admin"))
+        {
+            <div class="alert alert-info shadow">
+                <i class="fas fa-info-circle"></i> No products available yet.
+                <a asp-controller="Product" asp-action="Create" class="alert-link">Add your first product</a>!
+            </div>
+        }
+        else
+        {
+            <div class="alert alert-info shadow">
+                <i class="fas fa-info-circle"></i> No featured products available at the moment.
+            </div>
+        }
+    </div>
+</div>
