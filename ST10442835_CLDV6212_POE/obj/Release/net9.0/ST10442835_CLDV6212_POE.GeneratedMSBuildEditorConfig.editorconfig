@@ -17,81 +17,129 @@ build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = ST10442835_CLDV6212_POE
 build_property.RootNamespace = ST10442835_CLDV6212_POE
-build_property.ProjectDir = C:\Users\zainl\OneDrive\Desktop\MSA\Year 2\Semester 2\CLDV6212\Assignment P1\ST10442835_CLDV6212_POE\
+build_property.ProjectDir = C:\Users\zainl\OneDrive\Desktop\GitHub\ST10442835_CLDV6212POEP3\ST10442835_CLDV6212_POE\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 9.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\zainl\OneDrive\Desktop\MSA\Year 2\Semester 2\CLDV6212\Assignment P1\ST10442835_CLDV6212_POE
+build_property.MSBuildProjectDirectory = C:\Users\zainl\OneDrive\Desktop\GitHub\ST10442835_CLDV6212POEP3\ST10442835_CLDV6212_POE
 build_property._RazorSourceGeneratorDebug = 
 build_property.EffectiveAnalysisLevelStyle = 9.0
 build_property.EnableCodeStyleSeverity = 
 
-[C:/Users/zainl/OneDrive/Desktop/MSA/Year 2/Semester 2/CLDV6212/Assignment P1/ST10442835_CLDV6212_POE/Views/Customer/Create.cshtml]
+[C:/Users/zainl/OneDrive/Desktop/GitHub/ST10442835_CLDV6212POEP3/ST10442835_CLDV6212_POE/Views/Cart/Confirmation.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FydFxDb25maXJtYXRpb24uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/zainl/OneDrive/Desktop/GitHub/ST10442835_CLDV6212POEP3/ST10442835_CLDV6212_POE/Views/Cart/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FydFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/zainl/OneDrive/Desktop/GitHub/ST10442835_CLDV6212POEP3/ST10442835_CLDV6212_POE/Views/Customer/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VzdG9tZXJcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/zainl/OneDrive/Desktop/MSA/Year 2/Semester 2/CLDV6212/Assignment P1/ST10442835_CLDV6212_POE/Views/Customer/Edit.cshtml]
+[C:/Users/zainl/OneDrive/Desktop/GitHub/ST10442835_CLDV6212POEP3/ST10442835_CLDV6212_POE/Views/Customer/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VzdG9tZXJcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/zainl/OneDrive/Desktop/MSA/Year 2/Semester 2/CLDV6212/Assignment P1/ST10442835_CLDV6212_POE/Views/Customer/Index.cshtml]
+[C:/Users/zainl/OneDrive/Desktop/GitHub/ST10442835_CLDV6212POEP3/ST10442835_CLDV6212_POE/Views/Customer/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VzdG9tZXJcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/zainl/OneDrive/Desktop/MSA/Year 2/Semester 2/CLDV6212/Assignment P1/ST10442835_CLDV6212_POE/Views/Home/Index.cshtml]
+[C:/Users/zainl/OneDrive/Desktop/GitHub/ST10442835_CLDV6212POEP3/ST10442835_CLDV6212_POE/Views/Home/AdminDashboard.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxBZG1pbkRhc2hib2FyZC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/zainl/OneDrive/Desktop/GitHub/ST10442835_CLDV6212POEP3/ST10442835_CLDV6212_POE/Views/Home/CustomerDashboard.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDdXN0b21lckRhc2hib2FyZC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/zainl/OneDrive/Desktop/GitHub/ST10442835_CLDV6212POEP3/ST10442835_CLDV6212_POE/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/zainl/OneDrive/Desktop/MSA/Year 2/Semester 2/CLDV6212/Assignment P1/ST10442835_CLDV6212_POE/Views/Order/Create.cshtml]
+[C:/Users/zainl/OneDrive/Desktop/GitHub/ST10442835_CLDV6212POEP3/ST10442835_CLDV6212_POE/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/zainl/OneDrive/Desktop/GitHub/ST10442835_CLDV6212POEP3/ST10442835_CLDV6212_POE/Views/Login/AccessDenied.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5cQWNjZXNzRGVuaWVkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/zainl/OneDrive/Desktop/GitHub/ST10442835_CLDV6212POEP3/ST10442835_CLDV6212_POE/Views/Login/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5cSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/zainl/OneDrive/Desktop/GitHub/ST10442835_CLDV6212POEP3/ST10442835_CLDV6212_POE/Views/Login/Register.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5cUmVnaXN0ZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/zainl/OneDrive/Desktop/GitHub/ST10442835_CLDV6212POEP3/ST10442835_CLDV6212_POE/Views/Order/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/zainl/OneDrive/Desktop/MSA/Year 2/Semester 2/CLDV6212/Assignment P1/ST10442835_CLDV6212_POE/Views/Order/Details.cshtml]
+[C:/Users/zainl/OneDrive/Desktop/GitHub/ST10442835_CLDV6212POEP3/ST10442835_CLDV6212_POE/Views/Order/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJcRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/zainl/OneDrive/Desktop/MSA/Year 2/Semester 2/CLDV6212/Assignment P1/ST10442835_CLDV6212_POE/Views/Order/Edit.cshtml]
+[C:/Users/zainl/OneDrive/Desktop/GitHub/ST10442835_CLDV6212POEP3/ST10442835_CLDV6212_POE/Views/Order/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/zainl/OneDrive/Desktop/MSA/Year 2/Semester 2/CLDV6212/Assignment P1/ST10442835_CLDV6212_POE/Views/Order/Index.cshtml]
+[C:/Users/zainl/OneDrive/Desktop/GitHub/ST10442835_CLDV6212POEP3/ST10442835_CLDV6212_POE/Views/Order/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/zainl/OneDrive/Desktop/MSA/Year 2/Semester 2/CLDV6212/Assignment P1/ST10442835_CLDV6212_POE/Views/Product/Create.cshtml]
+[C:/Users/zainl/OneDrive/Desktop/GitHub/ST10442835_CLDV6212POEP3/ST10442835_CLDV6212_POE/Views/Order/Manage.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJcTWFuYWdlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/zainl/OneDrive/Desktop/GitHub/ST10442835_CLDV6212POEP3/ST10442835_CLDV6212_POE/Views/Order/MyOrders.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3JkZXJcTXlPcmRlcnMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/zainl/OneDrive/Desktop/GitHub/ST10442835_CLDV6212POEP3/ST10442835_CLDV6212_POE/Views/Product/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/zainl/OneDrive/Desktop/MSA/Year 2/Semester 2/CLDV6212/Assignment P1/ST10442835_CLDV6212_POE/Views/Product/Edit.cshtml]
+[C:/Users/zainl/OneDrive/Desktop/GitHub/ST10442835_CLDV6212POEP3/ST10442835_CLDV6212_POE/Views/Product/CustomerIndex.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxDdXN0b21lckluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/zainl/OneDrive/Desktop/GitHub/ST10442835_CLDV6212POEP3/ST10442835_CLDV6212_POE/Views/Product/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/zainl/OneDrive/Desktop/MSA/Year 2/Semester 2/CLDV6212/Assignment P1/ST10442835_CLDV6212_POE/Views/Product/Index.cshtml]
+[C:/Users/zainl/OneDrive/Desktop/GitHub/ST10442835_CLDV6212POEP3/ST10442835_CLDV6212_POE/Views/Product/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/zainl/OneDrive/Desktop/MSA/Year 2/Semester 2/CLDV6212/Assignment P1/ST10442835_CLDV6212_POE/Views/Shared/Error.cshtml]
+[C:/Users/zainl/OneDrive/Desktop/GitHub/ST10442835_CLDV6212POEP3/ST10442835_CLDV6212_POE/Views/Shared/AccessDenied.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEFjY2Vzc0RlbmllZC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/zainl/OneDrive/Desktop/GitHub/ST10442835_CLDV6212POEP3/ST10442835_CLDV6212_POE/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/zainl/OneDrive/Desktop/MSA/Year 2/Semester 2/CLDV6212/Assignment P1/ST10442835_CLDV6212_POE/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/zainl/OneDrive/Desktop/GitHub/ST10442835_CLDV6212POEP3/ST10442835_CLDV6212_POE/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/zainl/OneDrive/Desktop/MSA/Year 2/Semester 2/CLDV6212/Assignment P1/ST10442835_CLDV6212_POE/Views/Upload/Index.cshtml]
+[C:/Users/zainl/OneDrive/Desktop/GitHub/ST10442835_CLDV6212POEP3/ST10442835_CLDV6212_POE/Views/Upload/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXBsb2FkXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/zainl/OneDrive/Desktop/MSA/Year 2/Semester 2/CLDV6212/Assignment P1/ST10442835_CLDV6212_POE/Views/_ViewImports.cshtml]
+[C:/Users/zainl/OneDrive/Desktop/GitHub/ST10442835_CLDV6212POEP3/ST10442835_CLDV6212_POE/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/zainl/OneDrive/Desktop/MSA/Year 2/Semester 2/CLDV6212/Assignment P1/ST10442835_CLDV6212_POE/Views/_ViewStart.cshtml]
+[C:/Users/zainl/OneDrive/Desktop/GitHub/ST10442835_CLDV6212POEP3/ST10442835_CLDV6212_POE/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/zainl/OneDrive/Desktop/MSA/Year 2/Semester 2/CLDV6212/Assignment P1/ST10442835_CLDV6212_POE/Views/Shared/_Layout.cshtml]
+[C:/Users/zainl/OneDrive/Desktop/GitHub/ST10442835_CLDV6212POEP3/ST10442835_CLDV6212_POE/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-dnt1rvt0ad

@@ -7677,11 +7677,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\zainl\\OneDrive\\Desktop\\p1\\ST10442835_CLDV6212_POE (1)\\ST10442835_CLDV6212_POE\\ST10442835_CLDV6212_POE\\ST10442835_CLDV6212_POE\\ST10442835_CLDV6212_POE.csproj",
+      "projectUniqueName": "C:\\Users\\zainl\\OneDrive\\Desktop\\GitHub\\ST10442835_CLDV6212POEP3\\ST10442835_CLDV6212_POE\\ST10442835_CLDV6212_POE.csproj",
       "projectName": "ST10442835_CLDV6212_POE",
-      "projectPath": "C:\\Users\\zainl\\OneDrive\\Desktop\\p1\\ST10442835_CLDV6212_POE (1)\\ST10442835_CLDV6212_POE\\ST10442835_CLDV6212_POE\\ST10442835_CLDV6212_POE\\ST10442835_CLDV6212_POE.csproj",
+      "projectPath": "C:\\Users\\zainl\\OneDrive\\Desktop\\GitHub\\ST10442835_CLDV6212POEP3\\ST10442835_CLDV6212_POE\\ST10442835_CLDV6212_POE.csproj",
       "packagesPath": "C:\\Users\\zainl\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\zainl\\OneDrive\\Desktop\\p1\\ST10442835_CLDV6212_POE (1)\\ST10442835_CLDV6212_POE\\ST10442835_CLDV6212_POE\\ST10442835_CLDV6212_POE\\obj\\",
+      "outputPath": "C:\\Users\\zainl\\OneDrive\\Desktop\\GitHub\\ST10442835_CLDV6212POEP3\\ST10442835_CLDV6212_POE\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

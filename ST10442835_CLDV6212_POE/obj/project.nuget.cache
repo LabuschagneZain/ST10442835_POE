@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "JAw9+oO6J70=",
+  "dgSpecHash": "9n1MLH3pMEs=",
   "success": true,
-  "projectFilePath": "C:\\Users\\zainl\\OneDrive\\Desktop\\p1\\ST10442835_CLDV6212_POE (1)\\ST10442835_CLDV6212_POE\\ST10442835_CLDV6212_POE\\ST10442835_CLDV6212_POE\\ST10442835_CLDV6212_POE.csproj",
+  "projectFilePath": "C:\\Users\\zainl\\OneDrive\\Desktop\\GitHub\\ST10442835_CLDV6212POEP3\\ST10442835_CLDV6212_POE\\ST10442835_CLDV6212_POE.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\zainl\\.nuget\\packages\\azure.core\\1.44.1\\azure.core.1.44.1.nupkg.sha512",
     "C:\\Users\\zainl\\.nuget\\packages\\azure.data.tables\\12.11.0\\azure.data.tables.12.11.0.nupkg.sha512",
